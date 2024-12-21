@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Image Gallery</h1>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-index="0">
+                <img src="file:///C:/Users/hp/Downloads/Telegram%20Desktop/photo_2024-09-15_18-36-46.jpg" alt="Image 1">
+                <p class="caption">Image Caption 1</p>
+            </div>
+            <div class="gallery-item" data-index="1">
+                <img src="file:///C:/Users/hp/Downloads/Telegram%20Desktop/photo_2024-08-24_14-02-12.jpg" alt="Image 2">
+                <p class="caption">Image Caption 2</p>
+            </div>
+            <div class="gallery-item" data-index="2">
+                <img src="file:///C:/Users/hp/Downloads/Telegram%20Desktop/photo_2024-08-24_14-02-04.jpg" alt="Image 3">
+                <p class="caption">Image Caption 3</p>
+            </div>
+            <!-- Add more gallery items as needed -->
+        </div>
+    </div>
+
+    <!-- Modal for viewing images -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img id="modal-image" src="" alt="">
+            <p id="modal-caption"></p>
+        </div>
+        <div class="modal-navigation">
+            <span id="prev">&laquo; Prev</span>
+            <span id="next">Next &raquo;</span>
+        </div>
+    </div>
+</body>
+</html>
